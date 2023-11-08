@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from './pages/Home';
 import Dynamic from './pages/Dynamic';
+import SignIn from './pages/SignIn';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path:"/signin",
+    element: <SignIn/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
